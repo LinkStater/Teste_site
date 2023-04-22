@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+
+<!-- CSS -->
+<style type="text/css"> 
+
+#btn /* ID #btn que possui atributo de altura e largura */
+{
+width: 50px;
+height: 20px;
+}
+
+</style>
+<!-- CSS -->
+
+<!-- JavaScript -->
+<script type="text/javascript"> 
+	
+function func123() //Função Javascript
+{
+var a = document.getElementById("input1").value; 
+//Obtem o valor do Elemento que possui Id input1.
+var b = document.getElementById("input2").value;
+//Obtem o valor do Elemento que possui Id input2.
+var c = parseInt(a) + parseInt(b) 
+//parseInt converte para Int.
+
+document.getElementById("resultado").innerHTML = "Resultado = " + c;
+//O Elemento que possui Id resultado vai ser igual a var c.
+}
+
+</script>
+<!-- JavaScript -->
+
+</head>
+<body>
+
+<button onclick="func123()" id="btn">+</button>
+<!-- Botão que ao clicar, chama a funcao do Javascript -->
+<input type="text" id="input1" placeholder="Numero 1">
+<input type="text" id="input2" placeholder="Numero 2">
+<p id="resultado">Resultado</p>
+
+</body>
+</html>
